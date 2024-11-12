@@ -7,13 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         body {
-            background-color: #f8f9fa; /* Светлый фон для лучшего контраста */
+            background-color: #f8f9fa;
         }
         .container {
             max-width: 600px; /* Максимальная ширина контейнера */
             margin: auto; /* Центрирование контейнера */
             padding: 20px; /* Отступы внутри контейнера */
-            background-color: #ffffff; /* Белый фон для формы */
+            background-color: #ffffff;
             border-radius: 8px; /* Закругленные углы */
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для эффекта поднятости */
         }
@@ -40,9 +40,6 @@
         document.getElementById('calculate').addEventListener('click', function(event) {
             event.preventDefault();
             const height = document.getElementById('heightInput').value;
-            // const modalBody = document.getElementById('modalBody');
-            // modalBody.textContent = `Ваш рост - ${height} см!`;
-            // $('#heightModal').modal('show');
             const heightResult = document.getElementById('heightResult');
             heightResult.textContent = `Ваш рост - ${height} см!`;
         });
